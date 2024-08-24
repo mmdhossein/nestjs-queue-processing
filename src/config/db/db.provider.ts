@@ -4,6 +4,6 @@ export const databaseProviders = [
     {
         provide: 'DATABASE_CONNECTION',
         useFactory: (): Promise<typeof mongoose> =>
-            mongoose.connect('mongodb://localhost/test', {autoCreate:true,dbName:'test'}),
+            mongoose.connect(process.env.DB_CONNECTION, {autoCreate:true,dbName:'test'}),
     },
 ];
