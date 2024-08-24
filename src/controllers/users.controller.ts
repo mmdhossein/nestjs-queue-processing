@@ -24,7 +24,6 @@ import {UploadFileRequest} from "../models/file/uploadFileRequest";
 import {FileServices} from "../services/file/file.services";
 import {UploadedProductsRequest} from "../models/products/uploadedProducts.Request";
 import {QueueEnum} from "../models/queue/queueEnum";
-
 @Controller('user')
 @UseGuards(RolesGuard)
 export class UsersController {

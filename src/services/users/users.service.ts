@@ -4,7 +4,6 @@ import {ProductServices} from "../products/product.services";
 import {UserProduct, UserProductDocument} from "../../models/useres/userProducts";
 import {Model} from "mongoose";
 import {Product} from "../../models/products/products";
-
 @Injectable()
 export class UsersService {
     constructor(private fileServices: FileServices,
