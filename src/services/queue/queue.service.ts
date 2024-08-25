@@ -14,9 +14,4 @@ export class QueueService {
         const result = await this.client.emit(pattern, data);
         console.log(result)
     }
-    // @EventPattern('products_queue_1')
-    // async handleProductsMessage(@Payload() data: any) {
-    //     console.log('Received message:', data);
-    //     // Process the message here
-    // }
 }
